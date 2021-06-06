@@ -7,10 +7,11 @@
     "build": "next build",
     "start": "next start -p $PORT",
     "heroku-postbuild": "npm run build",
-    "prettier": "prettier --write 'components/**/*.ts?(x)' 'pages/**/*.ts?(x)'",
-    "lint": "eslint 'components/**/*.ts?(x)' 'pages/**/*.ts?(x)' --fix",
-    "tsc": "tsc",
-    "test": "jest"
+    "prettier": "prettier --write 'components/**/*.ts?(x)' 'pages/**/*.ts?(x)' 'lib/**/*.ts?(x)'",
+    "lint": "eslint 'components/**/*.ts?(x)' 'pages/**/*.ts?(x)' 'lib/**/*.ts?(x)' --fix",
+    "types": "tsc --pretty --noEmit",
+    "test": "jest",
+    "prepare": "husky install"
   },
   "dependencies": {
     "date-fns": "^2.11.1",
@@ -36,6 +37,8 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
     "prettier": "^2.3.1",
     "typescript": "^4.3.2"
   }

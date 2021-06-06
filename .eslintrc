@@ -26,7 +26,6 @@
     "semi": ["error", "always"],
     "comma-dangle": ["error", "only-multiline"],
     "space-before-function-paren": ["error", "never"],
-    "arrow-parens": ["error", "as-needed"],
     "react/prop-types": 0,
     "react/jsx-filename-extension": [
       1,
